@@ -1,3 +1,7 @@
+# Random Forest + Long Short Term Memory
+
+# FIRST BLOCK #
+# -------------------------------------------------- #
 # Libraries
 import pandas as pd
 import numpy as np
@@ -14,7 +18,9 @@ print('--- Dataset Info ---')
 df.info()
 print('\n--- First 5 Rows ---')
 df.head()
-
+# -------------------------------------------------- #
+# SECOND BLOCK #
+# -------------------------------------------------- #
 # Extract Year, Month, Day, Hour, DayOfWeek from 'Timestamp'
 df['Year'] = df['Timestamp'].dt.year
 df['Month'] = df['Timestamp'].dt.month
@@ -66,7 +72,9 @@ plt.figure(figsize=(12, 8))
 sns.barplot(x='Importance Score', y='Feature', hue='Feature', legend=False, data=feature_importances.head(10), palette='rocket')
 plt.title('Top 10 Most Important Features')
 plt.show()
-
+# -------------------------------------------------- #
+# THIRD BLOCK #
+# -------------------------------------------------- #
 import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense, Dropout
@@ -146,3 +154,4 @@ print(classification_report(y_test_seq, y_pred_lstm))
 
 print('\nConfusion Matrix')
 print(confusion_matrix(y_test_seq, y_pred_lstm))
+# -------------------------------------------------- #
