@@ -6,7 +6,3 @@
 - **Dataset:** https://www.kaggle.com/datasets/ziya07/smart-logistics-supply-chain-dataset
 - **Tools:** Google Colab
 - **Libraries:** pandas, numpy, matplotlib, seaborn, scikit-learn, tensorflow <br><br>
-
-**Description**
-- Google Colab chosen to avoid any operating system and version restriction
-- 
