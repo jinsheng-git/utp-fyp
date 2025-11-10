@@ -1,3 +1,5 @@
+# Default Random Forest configuration #
+# -------------------------------------------------- #
 # Libraries
 import pandas as pd
 import numpy as np
@@ -52,7 +54,9 @@ print(classification_report(y_test, y_pred))
 
 print("\nConfusion Matrix:")
 print(confusion_matrix(y_test, y_pred))
-
+# -------------------------------------------------- #
+# Tuned Random Forest #
+# -------------------------------------------------- #
 # Libraries
 import pandas as pd
 import numpy as np
@@ -126,3 +130,4 @@ print(classification_report(y_test, y_pred))
 
 print("\nConfusion Matrix:")
 print(confusion_matrix(y_test, y_pred))
+# -------------------------------------------------- #
