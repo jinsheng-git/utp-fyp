@@ -1,3 +1,5 @@
+# Default XGBoost configuration #
+# -------------------------------------------------- #
 # Libraries
 import pandas as pd
 import numpy as np
@@ -60,7 +62,9 @@ print(classification_report(y_test, y_pred))
 
 print("\nConfusion Matrix:")
 print(confusion_matrix(y_test, y_pred))
-
+# -------------------------------------------------- #
+# Tuned XGBoost #
+# -------------------------------------------------- #
 # Imports
 import pandas as pd
 import numpy as np
@@ -143,3 +147,4 @@ print(classification_report(y_test, y_pred))
 
 print("\nConfusion Matrix:")
 print(confusion_matrix(y_test, y_pred))
+# -------------------------------------------------- #
