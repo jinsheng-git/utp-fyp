@@ -1,18 +1,30 @@
-# Final Year Project at Universiti Teknologi PETRONAS
+# Machine Learning in Supply Chain Risk Prediction
+My Final Year Project at University Technology PETRONAS (January 2025 - August 2025)
 
-**Title:** Machine Learning in Supply Chain Risk Prediction <br><br>
+# Description
+This is a machine learning model building focuses on Random Forest (RF), XGBoost (XGB), and Long Short Term Memory (LSTM).
 
-**Summary**
-- I came up with the idea of utilising the ability of Random Forest to select important features (x) that contribute to Long Short Term Memory target prediction (y).
-- For rf_lstm.py, the rf feature selection phase succeed but the lstm prediction phase failed. Reason being is that the dataset chosen does not have efficient time-series pattern that lstm needed. Hence, the project changes direction to the comparison of Random Forest and XGBoost.
-- For random-forest.py, it contains the default configuration and tuned configuration.
-- For xgboost.py, it contains the default configuration and tuned configuration. <br><br>
+Three model *rf_lstm*, *random_forest*, and *xgboost* in separate .py files.
 
-**Requirements**
-- **Dataset:** https://www.kaggle.com/datasets/ziya07/smart-logistics-supply-chain-dataset
-- **Tools:** Google Colab
-- **Libraries:** pandas, numpy, matplotlib, seaborn, scikit-learn, tensorflow <br><br>
+### *rf_lstm.py*
+An ensemble machine model that...
+1. Initial idea to utilise RF feature selection (x) for LSTM target prediction (y).
+2. RF phase succeed, able to determine the top n important features.
+3. LSTM phase failed, dataset chosen lack of efficient time-series pattern. Result remained the same after data processing on time-related data.
+4. Model building attempt stopped here, then moved on to standalone tree-based model building to achieve project's goal.
+<br><br>
 
-**Reminders**
-- This project conducted with Google Colab to avoid any operating system and python libraries constraint.
-- Inside the rf_lstm.py, random-forest.py, and xgboost.py there is section separated by "# ---------- #".
+### *random_forest.py*
+Included default RF configuration and tuned RF configuration. Nothing special to mention, can try different tuning.
+<br><br>
+
+### *xgboost.py*
+Included default XGB configuration and tuned XGB configuration. Nothing special to mention, can try different tuning.
+<br><br>
+
+# Installation
+Any Python notebook will work, recommend to use Google Collab, I separated each block by # ---------- #.
+<br><br>
+**Libraries:** pandas, numpy, matplotlib, seaborn, scikit-learn, tensorflow
+
+**Dataset:** https://www.kaggle.com/datasets/ziya07/smart-logistics-supply-chain-dataset
